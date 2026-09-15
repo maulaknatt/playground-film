@@ -1,4 +1,4 @@
-import { GithubIcon, Heart, Info, Settings } from 'lucide-react'
+import { Heart, Info, Instagram, Settings } from 'lucide-react'
 
 import { useShallowState } from '@/store'
 import config from '../../config'
@@ -102,19 +102,16 @@ export const Navbar = () => {
       <Button
         variant='ghost'
         size='icon'
-        onClick={toggleSettingsOpen}
-        onPointerDown={(event) => {
-          event.preventDefault()
-          event.stopPropagation()
-        }}
         className={cn(buttonClassnames, 'hidden md:inline-flex')}
+        asChild
       >
         <a
-          href={config.sourceCodeUrl}
+          href={config.socialUrl}
           target='_blank'
-          rel='noreferrer noopener noreferer'
+          rel='noreferrer noopener'
+          aria-label='Instagram'
         >
-          <GithubIcon />
+          <Instagram />
         </a>
       </Button>
     </div>

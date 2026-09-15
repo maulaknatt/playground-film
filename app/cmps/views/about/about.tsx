@@ -1,4 +1,4 @@
-import { GithubIcon } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 
 import { store, useShallowState } from '@/store'
 import type { PropsWithChildren } from 'react'
@@ -81,6 +81,10 @@ const items = [
     content: (
       <>
         <p>
+          <b>Playground Film</b> is an interactive movie discovery experience created by Maulana (@maulaknat).
+        </p>
+        <br />
+        <p>
           The silver screen's heyday is arguably behind us. Luckily, we have
           over a hundred years of cinema to fall back on.
         </p>
@@ -107,7 +111,7 @@ const items = [
     className: 'hidden mouse:block',
   },
   {
-    title: 'Technical TL;DR',
+    title: 'Technical TL;DR & Credits',
     content: (
       <>
         <p>
@@ -118,13 +122,17 @@ const items = [
           the visualization layer uses WebGL2.
         </p>
         <br />
+        <p>
+          Adapted from the open-source project by gnovotny (There's nothing to watch).
+        </p>
+        <br />
         <Button variant='default' asChild>
           <a
-            href={config.sourceCodeUrl}
+            href={config.socialUrl}
             target='_blank'
-            rel='noreferrer noopener noreferer'
+            rel='noreferrer noopener'
           >
-            <GithubIcon /> Source code
+            <Instagram /> Instagram (@maullz._)
           </a>
         </Button>
       </>

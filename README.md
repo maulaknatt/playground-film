@@ -1,59 +1,60 @@
-# There's nothing to watch...
+# 🎬 Playground Film
 
-The silver screen's heyday is arguably behind us. Luckily, we have
-over a hundred years of cinema to fall back on.
+> **Playground Film** adalah galeri interaktif berbasis WebGL untuk menjelajahi dan menemukan lebih dari 50.000 poster film dalam visualisasi diagram Voronoi (*force-directed graph*).
+> 
+> Dibuat & dikembangkan oleh **Maulana** ([@maulaknat](https://www.instagram.com/maullz._/)).
 
+[![Instagram](https://img.shields.io/badge/Instagram-@maullz._-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/maullz._/)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Creative Commons License](https://img.shields.io/badge/License-CC%20BY--NC--SA%203.0-lightgrey.svg)
-![ODC Attribution License](https://img.shields.io/badge/License-ODC%20By-brightgreen.svg)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.8-blue.svg)
 ![React](https://img.shields.io/badge/React-19.1-blue.svg)
-![WebGL](https://img.shields.io/badge/WebGL-enabled-green.svg)
+![WebGL](https://img.shields.io/badge/WebGL-2.0-green.svg)
 
-## 🎬 Overview
-An experimental WebGL gallery that visualizes tens of thousands of film posters in an interactive force-directed voronoi diagram.
+---
 
-### Key Features
+## 🌟 Tentang Playground Film (About)
 
-- **Interactive WebGL Visualization**: Real-time rendering of tens of thousands of film posters
-- **Custom Voroforce Engine**: Purpose-built force simulation and rendering system with multi-threading support
-- **Responsive Design**: Adapts to desktop, tablet, and mobile devices
-- **Performance Optimized**: GPU-accelerated rendering with efficient memory management
-- **Film Discovery**: Explore movies through visual relationships and clustering
-- **Multiple View Modes**: Intro, selection, and preview modes for different user experiences
+**Playground Film** menyajikan cara baru dan unik dalam mencari inspirasi tontonan film bioskop legendaris maupun populer:
+- 🌌 **Visualisasi Interaktif 50.000+ Film**: Poster film diatur secara dinamis menggunakan simulasi fisika dan diagram Voronoi.
+- ⚡ **Performa Tinggi (GPU-Accelerated)**: Visualisasi ditenagai WebGL2 dan multithreading (Web Worker) sehingga tetap mulus saat menjelajahi puluhan ribu poster.
+- 🔍 **Filter & Pengaturan Fleksibel**: Cari berdasarkan popularitas, rating, genre, hingga mode tampilan (Desktop, Tablet, Mobile).
+- 🎨 **Desain Modern**: Antarmuka responsif dengan dukungan tema gelap/terang dan kontrol pintasan keyboard.
 
-## 🚀 Quick Start
+---
 
-### Prerequisites
+## 🚀 Cara Menjalankan di Komputer (Quick Start)
 
-- **Bun** (recommended) or Node.js 18+ with a package manager of your choice (npm, yarn, pnpm, etc.)
-- Modern browser with WebGL 2.0 support
+### Persyaratan:
+- **Node.js (v18+)** atau **Bun**
+- Browser modern yang mendukung WebGL 2.0 (Chrome, Edge, Firefox, dsb.)
 
-### Installation
+### Langkah Instalasi:
 
-1. **Clone the repository**
+1. **Clone repository ini**:
    ```bash
-   git clone git@github.com:gnovotny/nothing-to-watch.git
-   cd nothing-to-watch
+   git clone https://github.com/maulaknatt/playground-film.git
+   cd playground-film
    ```
 
-2. **Set up environment variables**
+2. **Siapkan environment file**:
    ```bash
    cp .env.local.example .env.local
    ```
 
-3. **Install dependencies**
+3. **Install dependencies**:
    ```bash
-   bun install
+   npm install
+   # atau jika memakai bun: bun install
    ```
 
-4. **Start development server**
+4. **Jalankan development server**:
    ```bash
-   bun dev
+   npm run dev
+   # atau jika memakai bun: bun dev
    ```
 
-5. **Open your browser**
-   Navigate to `http://localhost:3000`
+5. **Buka aplikasi**:
+   Akses `http://localhost:3000` di browser Anda.
 
 ## 🛠 Development
 
@@ -282,9 +283,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - WebGL fragment shaders are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 - Film data is licensed under the Open Data Commons Attribution License (ODC-By) v1.0.
 
-## 🙋‍♂️ Support
+## 🙋‍♂️ Support & Contact
 
-If you have any issues or questions:
-
-- **GitHub Issues**: Open an issue on this repository
-- **Email**: Contact at [96j0o1ivb@mozmail.com](mailto:96j0o1ivb@mozmail.com)
+- **Author**: Maulana (@maulaknat)
+- **Instagram**: [@maullz._](https://www.instagram.com/maullz._/)
+- **Email**: [maulana712bagus@gmail.com](mailto:maulana712bagus@gmail.com)
+- **Original Engine/Credit**: Adapted from the open-source project by gnovotny.
