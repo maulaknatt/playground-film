@@ -33,16 +33,20 @@ export class Film {
 }
 
 const loadCellFilmBatch = async (batchIndex: number) => {
-  const url = `${import.meta.env.VITE_FILM_INFO_BASE_URL}/${batchIndex}.json`
+  const baseUrl = import.meta.env.VITE_FILM_INFO_BASE_URL || '/json'
+  const url = `${baseUrl}/${batchIndex}.json`
   try {
     const response = await fetch(url)
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`)
+      return []
+    }
+    const contentType = response.headers.get('content-type')
+    if (contentType && !contentType.includes('application/json')) {
+      return []
     }
     return await response.json()
-  } catch (error) {
-    console.log('batchIndex', batchIndex)
-    console.error('Error loading JSON:', error)
+  } catch {
+    return []
   }
 }
 
